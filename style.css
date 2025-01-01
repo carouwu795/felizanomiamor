@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Fondo de la página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Se ajusta al tamaño completo de la ventana */
+    background-color: #ffe5e5;  /* Fondo suave */
+}
+
+/* Contenedor principal */
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;  /* Espacio entre los elementos */
+    width: 100%;  /* Se ajusta al tamaño disponible */
+    max-width: 500px;  /* Tamaño máximo del contenedor */
+    margin: 10px;
+    padding: 20px;
+}
+
+/* Estilo del GIF */
+.tenor-gif-embed {
+    width: 100%;  /* Ajusta el tamaño del GIF al ancho del contenedor */
+    max-width: 400px;  /* Tamaño máximo para no hacer el GIF demasiado grande */
+    margin: 0 auto;  /* Centra el GIF */
+}
+
+/* Encabezado */
+.container h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #111;
+    margin-top: 20px;
+}
+
+/* Botones */
+.container .btn {
+    display: flex;
+    flex-direction: column;  /* Coloca los botones en una columna */
+    align-items: center;  /* Centra los botones */
+    gap: 20px;  /* Espacio entre los botones */
+    width: 100%;
+}
+
+/* Estilos para los enlaces en los botones */
+.btn a {
+    text-decoration: none;
+    color: #fff;
+    background: #ce8bca;  /* Fondo de los botones */
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0, 0, 0, 0.3);
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+/* Efecto hover en los botones */
+.btn a:hover {
+    background: #a5679a;
+    transform: translateY(-2px);
+}
+
+/* Responsividad para pantallas pequeñas (celulares) */
+@media screen and (max-width: 600px) {
+    /* Título más pequeño */
+    .container h1 {
+        font-size: 1.2rem;
+    }
+
+    /* Ajuste de tamaño de los botones */
+    .btn a {
+        width: 80%;  /* Los botones ocupan el 80% del ancho en pantallas pequeñas */
+        margin-bottom: 10px;  /* Espacio entre los botones */
+    }
+
+    /* El GIF se ajusta al 100% de la pantalla */
+    .tenor-gif-embed {
+        width: 100%;
+        max-width: 300px;  /* El GIF será más pequeño en pantallas pequeñas */
+    }
+}
